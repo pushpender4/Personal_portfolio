@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+/* ---------------------------------default css for (body,section,heading,buttons)--------------------------------------------- */
 :root{
     --main-color:#e38528;
 }
@@ -57,7 +58,12 @@ section{
     background:#111;
     letter-spacing: .2rem;
 }
+/* ---------------------------------default css for (body,section,heading,buttons) ends---------------------------------------- */
 
+
+/* --------------------------------------------------------------header section starts ---------------------------------------- */
+
+/* -----------------------------header section styling ----------------------- */
 header{
     position: fixed;
     top:0; left:0; bottom:0;
@@ -72,6 +78,7 @@ header{
     text-align: center;
 }
 
+/* ---------------------------logo (PUSHPENDER SINGH) -------------------------*/
 header .logo{
     text-transform: uppercase;
     color:#fff;
@@ -84,6 +91,8 @@ header .logo span{
     color:var(--main-color);
 }
 
+
+/*----------------- navbar links (home about service contact etc)--------------- */
 header .navbar a{
     display: block;
     font-size: 2rem;
@@ -96,6 +105,7 @@ header .navbar a:hover{
     color:var(--main-color);
 }
 
+/* ----------------header icon designing(fb, twitter, github,linkedein) --------- */
 header .follow a{
     font-size: 2.5rem;
     color:#fff;
@@ -106,6 +116,7 @@ header .follow a:hover{
     color:var(--main-color);
 }
 
+/* --------------------------------hamburger icon designing --------------------- */
 #menu-bars{
     position: fixed;
     top:1rem; right: 1rem;
@@ -119,6 +130,12 @@ header .follow a:hover{
     display: none;
 }
 
+/* --------------------------------------------------header section ends ------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------CURSOR -----------------------------------------------------------------  */
 .cursor-1{
     position: absolute;
     top:0; left:0;
@@ -152,6 +169,11 @@ header .follow a:hover{
     display: none;
 }
 
+/*------------------------------------------------------------ CURSOR ENDS --------------------------------------- */
+
+
+
+/*--------------------------------------------------------------- home section starts --------------------------- */
 .home{
     display: flex;
     align-items: center;
@@ -201,6 +223,12 @@ header .follow a:hover{
     padding:.5rem 0;
 }
 
+/*----------------------------------------------------------- home section ends ------------------------------------------ */
+
+
+/* --------------------------------------------------------about and my skills section ------------------------------------- */
+
+/* -------------------------about part ---------------------- */
 .about .row-1{
     display: flex;
     flex-wrap: wrap;
@@ -251,6 +279,7 @@ header .follow a:hover{
     color:var(--main-color);
 }
 
+/*-------------------------- my skills part ----------------------- */
 .about .row-2{
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +339,7 @@ header .follow a:hover{
     flex:1 1 40rem;
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:1.5rem; 
 }
 
 .about .row-2 .box-container .box{
@@ -331,7 +360,10 @@ header .follow a:hover{
     font-size: 1.7rem;
     padding-top: .5rem;
 }
+/* -----------------------------------------------------about and my skills section ends-------------------------------------- */
 
+
+/* -------------------------------------------------------------------------my services section------------------------------- */
 .service .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -374,6 +406,10 @@ header .follow a:hover{
     flex-wrap: wrap;
 }
 
+/* ---------------------------------------------------my services section ends ------------------------------------------------ */
+
+
+/* ----------------------------------------------------experience section ------------------------------------------------------ */
 .experience .box-container .box{
     position: relative;
     flex:1 1 33rem;
@@ -418,7 +454,11 @@ header .follow a:hover{
     font-size: 1.5rem;
     color:#666;
 }
+/*-------------------------------------------------------- experience section ends ------------------------------------------------- */
 
+
+
+/* --------------------------------------------------------portfolio section ------------------------------------------------------ */
 .portfolio .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -481,6 +521,10 @@ header .follow a:hover{
     color:#fff;
 }
 
+/*-------------------------------------------------------- portfolio section ends ------------------------------------------------ */
+
+
+/* ---------------------------------------------------------contact section starts------------------------------------------------- */
 .contact .icons-container{
     display: flex;
     gap:1.5rem;
@@ -519,7 +563,11 @@ header .follow a:hover{
     font-size: 1.7rem;
     text-transform: lowercase;
 }
+.contact .icons-container .icons:nth-child(3) p{
+    text-transform: capitalize;
+}
 
+/*-------------------------------------- form part ------------------ */
 .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -547,7 +595,7 @@ header .follow a:hover{
     width: 100%;
     border-bottom: .1rem solid #333;
     color:#333;
-    text-transform: none;
+    text-transform: capitalize;
     font-size: 1.7rem;
     padding:1rem 0;
     margin:1rem 0;
@@ -556,6 +604,7 @@ header .follow a:hover{
 .contact .row form .box:focus,
 .contact .row form textarea:focus{
     border-color: var(--main-color);
+    box-shadow: 0 1rem 1rem rgba(250, 3, 3, 0.1);
 }
 
 .contact .row form .box::placeholder,
@@ -572,6 +621,8 @@ header .follow a:hover{
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
+/* --------------------------------------------------------contact section ends --------------------------------------------------------- */
+
 
 .footer{
     margin-top: 2rem;
@@ -585,13 +636,13 @@ header .follow a:hover{
 .footer span{
     color:var(--main-color);
 }
+/*--------------------------------------------------------------- contact section ends ------------------------------------------------ */
 
 
 
 
 
-
-/* media queries  */
+/* -----------------------------------------------------------------media queries ------------------------------------------------------ */
 @media (max-width:991px){
 
     html{

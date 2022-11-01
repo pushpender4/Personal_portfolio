@@ -1,3 +1,4 @@
+// ------------------------------------------------js for hamburger ----------------------------------------
 let menu = document.querySelector('#menu-bars');
 let header = document.querySelector('header');
 
@@ -11,6 +12,7 @@ window.onscroll = () =>{
     header.classList.remove('active');
 }
 
+//----------------------------------------------------- js for cursor ----------------------------------------
 let cursor1 = document.querySelector('.cursor-1');
 let cursor2 = document.querySelector('.cursor-2');
 
