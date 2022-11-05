@@ -595,7 +595,7 @@ header .follow a:hover{
     width: 100%;
     border-bottom: .1rem solid #333;
     color:#333;
-    text-transform: capitalize;
+    text-transform: none;
     font-size: 1.7rem;
     padding:1rem 0;
     margin:1rem 0;
