@@ -279,6 +279,9 @@ header .follow a:hover{
     color:var(--main-color);
 }
 
+.email {
+  text-transform: none;
+}
 /*-------------------------- my skills part ----------------------- */
 .about .row-2{
     display: flex;
